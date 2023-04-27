@@ -1,5 +1,6 @@
 var image = require('node-html-to-image')
 var fs = require('fs')
+const { default: puppeteer } = require('puppeteer')
 
 
 fs.readFile('index.html','utf-8',function(err,data) {
@@ -7,4 +8,4 @@ fs.readFile('index.html','utf-8',function(err,data) {
 })
 
 
-puppetter.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']})
+puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']})
