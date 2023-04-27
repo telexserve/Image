@@ -7,4 +7,4 @@ fs.readFile('index.html','utf-8',function(err,data) {
 })
 
 
-const client = new Client({puppeteer: {args: []}});
+puppetter.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']})
