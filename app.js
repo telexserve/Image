@@ -7,9 +7,4 @@ fs.readFile('index.html','utf-8',function(err,data) {
 })
 
 
-const launchBrowser = async () => {
-    puppetBrowser = await puppeteer.launch({
-      args: ['--no-sandbox'],
-      timeout: 10000,
-    })
-  }
+const browser = await puppeteer.launch({headless: true, args:['--no-sandbox']});
