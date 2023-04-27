@@ -7,4 +7,4 @@ fs.readFile('index.html','utf-8',function(err,data) {
 })
 
 
-const browser = await puppeteer.launch({headless: true, args:['--no-sandbox']});
+puppeteer.launch({headless: true, args:['--no-sandbox']});
