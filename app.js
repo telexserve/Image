@@ -7,8 +7,4 @@ fs.readFile('index.html','utf-8',function(err,data) {
 })
 
 
-const browser = await puppeteer.launch({
-          args: ['--no-sandbox', '--disable-setuid-sandbox'],
-          ignoreHTTPSErrors: true,
-          dumpio: false
-        });
+const client = new Client({puppeteer: {args: []}});
